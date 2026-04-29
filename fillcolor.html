@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+        <title>To fill color inside rectangle on canvas</title>
+        <style>
+            canvas {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById("mycanvas");
+            var context = canvas.getContext("2d");
+            context.rect(50, 50, 200, 100);
+            context.lineWidth = 5;
+            context.strokeStyle = "black";
+            context.fillStyle = "orange";
+            context.fill();
+            context.stroke();
+        }
+    </script>
+    <body>
+        <canvas id="mycanvas" height="200" width="300"></canvas>
+    </body>
+</html>
